@@ -1,3 +1,8 @@
+# Guilded Rose Tech Test
+
+The guilded rose tech test involves taking pre-existing code, adding tests and adding to the main method of the guilded rose class to include a new type of item.
+
+
 ### Assumptions
 
 ```

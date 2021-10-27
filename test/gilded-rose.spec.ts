@@ -90,6 +90,16 @@ describe('Gilded Rose', function () {
 			
 		});
 
+		describe('Conjured Mana Cake', function(){
+
+			it('should decrease quality twice as fast', function() {
+				const gildedRose = new GildedRose([ new Item("Conjured Mana Cake", 3, 6) ]);
+				const items = gildedRose.updateQuality();
+				expect(items[0].quality).to.equal(4);
+			});
+	
+		});
+
 	});
 
 });
