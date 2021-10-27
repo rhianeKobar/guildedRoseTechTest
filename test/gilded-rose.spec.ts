@@ -3,6 +3,11 @@ import { Item, GildedRose } from '../app/gilded-rose';
 
 describe('Gilded Rose', function () {
 
+	it('should initialise with an array', function(){
+		const gildedRose = new GildedRose([ new Item("Eye ghost", 5, 5) ]);
+		expect(gildedRose.items).to.be.an.instanceof(Array);	 
+	})
+
 	describe('Regular constraints', function(){
 
 		it('should decrease the quality and sell by date of an item by 1', function() {
@@ -68,6 +73,7 @@ describe('Gilded Rose', function () {
 				const gildedRose = new GildedRose([ new Item("Backstage passes to a TAFKAL80ETC concert", 9, 20) ]);
 				const items = gildedRose.updateQuality();
 				expect(items[0].quality).to.equal(22);
+				expect(items[0].sellIn).to.equal(8);
 			});
 	
 			it('should increase the quality of the backstage pass by 3 if there are less than 6 days to the concert', function() {
@@ -80,6 +86,7 @@ describe('Gilded Rose', function () {
 				const gildedRose = new GildedRose([ new Item("Backstage passes to a TAFKAL80ETC concert", 0, 20) ]);
 				const items = gildedRose.updateQuality();
 				expect(items[0].quality).to.equal(0);
+				expect(items[0].sellIn).to.equal(0);
 			});
 
 			it('should increase the quality of the backstage pass by 1 if there are more than 10 days to the concert', function() {
@@ -96,6 +103,7 @@ describe('Gilded Rose', function () {
 				const gildedRose = new GildedRose([ new Item("Conjured Mana Cake", 3, 6) ]);
 				const items = gildedRose.updateQuality();
 				expect(items[0].quality).to.equal(4);
+				expect(items[0].sellIn).to.equal(2);
 			});
 	
 		});
