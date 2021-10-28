@@ -1,9 +1,6 @@
 # Gilded Rose Tech Test
 
-The gilded rose tech test involves taking pre-existing code, adding tests and adding to the main method of the gilded rose class to include a new type of item. You must also make some assumptions on how the programme works based on the list of requirements given. 
-
-This test is done in typescript with mochaJS as the testing framework.
-
+The gilded rose tech test involves taking [pre-existing code](https://github.com/emilybache/GildedRose-Refactoring-Kata), adding tests and adding to the main method of the gilded rose class to include a new type of item. You must also make some assumptions on how the programme works based on the list of requirements given. 
 
 ## Approach
 
@@ -35,6 +32,11 @@ This test is done in typescript with mochaJS as the testing framework.
 - The quality of the Aged Brie increases by 2 after the sellIn date
 
 ## Dependencies
+
+For testing Mocha and Chai with myc as the command line interface are being used.
+
+Follow [these instructions](https://www.npmjs.com/package/nyc) to install nyc
+
 
 ## Testing
 
