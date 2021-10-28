@@ -17,7 +17,8 @@ This test is done in typescript with mochaJS as the testing framework.
 - Write tests for new item.
 - Modify UpdateQuality method to include new item conditions.
 - Update README.md.
-- Refactor the gildedRose class to have a new method processItem. This allows the owner of the Guilded Rose to add new types of items and set the contraints for them. 
+- Refactor 1: refactor the gildedRose class to have a new method processItem. This allows the owner of the Guilded Rose to add new types of items and set the contraints for them. 
+- Refactor 2: Move the item class to a new file and test it.
 
 ## Assumptions
 

@@ -1,5 +1,6 @@
 import { expect } from 'chai';
-import { Item, GildedRose } from '../app/gilded-rose';
+import { GildedRose } from '../src/gilded-rose';
+import { Item } from '../src/item'
 
 describe('Gilded Rose', function () {
 

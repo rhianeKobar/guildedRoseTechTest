@@ -29,8 +29,7 @@
     ],
     "exclude": [
       "**/*.d.ts",
-      "test/**",
-      "src/_tests_/**/*.*"
+      "test/**"
     ],
     "require": [
       "ts-node/register"
